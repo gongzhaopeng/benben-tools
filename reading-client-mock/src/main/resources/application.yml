@@ -1,0 +1,18 @@
+server:
+  port: 0
+
+reading:
+  client:
+    mock:
+      server-base-path: http://192.168.30.200:9003/api/v1
+      login-path: /getReadinguser/{openid}
+      confirm-user-path: /users/readingPut
+      exam-paper-path: /tests/{tid}/assessment
+      result-init-path: /uureading/results/init
+      commit-single-answer-path: /uureading/single/answers
+      reading-paper-ids: 58ca92865bb5c32c64fd9c6b, 58ca92865bb5c32c64fd9d39
+      recognition-paper-id: 5947bb416813090f08eee942
+      paragraph-paper-id: 59c4cde6accc7b7dff6bf242
+      vocabulary-paper-id: 5a0908b6accc7b33d7942891
+      client-ids: YLtest16, YLtest17, YLtest18, YLtest19, YLtest20, YLtest21, YLtest22, YLtest23, YLtest24, YLtest25, YLtest26, YLtest27, YLtest28, YLtest29, YLtest30, YLtest31, YLtest32, YLtest33, YLtest34, YLtest35, YLtest36, YLtest37, YLtest38, YLtest39, YLtest40, YLtest41, YLtest42, YLtest43, YLtest44, YLtest45, YLtest46, YLtest47, YLtest48, YLtest49, YLtest50
+      answer-commit-delay: 0

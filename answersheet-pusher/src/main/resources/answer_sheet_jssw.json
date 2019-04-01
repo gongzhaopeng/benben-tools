@@ -1,0 +1,1066 @@
+[
+  {
+    "id": "d56fc99a-b646-4a94-8107-db6c2b3c83cd",
+    "answers": [
+      {
+        "refQuestion": "221f0e50-ce33-466c-b356-0f7dd578645f",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551859146957,
+          "endTime": 1551859148058,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "32c7e5e3-5a63-426e-8e27-d4f51900c6b3",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551859148749,
+          "endTime": 1551859149304,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "12965c8f-d304-4463-a53f-1cf2a543089b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551859149415,
+          "endTime": 1551859150236,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "5ddb2bc9-eb28-40f4-aee1-ee156c92742e",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551859150346,
+          "endTime": 1551859150754,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "6036f41c-1f46-40a5-8d4d-27e6a242d4e1",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551859150866,
+          "endTime": 1551859151652,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "bdafdb11-c812-4695-a92e-8f03d19308de",
+        "result": {
+          "style": "JSSW_Q4",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551859151759,
+          "endTime": 1551859153338,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "fd7431d1-5504-4f6b-9e34-795106b24346",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551859153449,
+          "endTime": 1551859154038,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "5a7d2377-e3fa-4b2b-ba6d-d27802a6514e",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551859154149,
+          "endTime": 1551859155063,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "34f11a3b-835a-4483-afbb-e313c69f40b7",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551859155179,
+          "endTime": 1551859155772,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "952e1384-a02f-46f2-82ec-d0410ded3bbe",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551859155885,
+          "endTime": 1551859156355,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "f096df5d-cccd-43ab-a185-6e62fab5b5ef",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551859156467,
+          "endTime": 1551859158005,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "b01dab1a-3993-4ef8-a789-169dd367fc91",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551859158120,
+          "endTime": 1551859158691,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "d787aa77-0dc7-4b37-8def-b8996cc13ba9",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551859158805,
+          "endTime": 1551859159288,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "2dfe4df0-c7f2-450e-b834-6e5e639ff382",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551859159400,
+          "endTime": 1551859159906,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "eea99276-10aa-4510-a152-8a5ec36b3394",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551859162477,
+          "endTime": 1551859163324,
+          "misc": ""
+        }
+      }
+    ],
+    "refAdmissionTicket": "5339b7cb-0fcb-4dd6-8509-89b1b163aa77",
+    "oplog": {
+      "startTime": 1551855183719,
+      "endTime": 1551859168240,
+      "misc": "[{\"time\":1551859148058,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"221f0e50-ce33-466c-b356-0f7dd578645f\"},{\"time\":1551859148182,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"221f0e50-ce33-466c-b356-0f7dd578645f\"},{\"time\":1551859148744,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"eea99276-10aa-4510-a152-8a5ec36b3394\"},{\"time\":1551859149304,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"32c7e5e3-5a63-426e-8e27-d4f51900c6b3\"},{\"time\":1551859149410,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"32c7e5e3-5a63-426e-8e27-d4f51900c6b3\"},{\"time\":1551859150236,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"12965c8f-d304-4463-a53f-1cf2a543089b\"},{\"time\":1551859150342,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"12965c8f-d304-4463-a53f-1cf2a543089b\"},{\"time\":1551859150754,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5ddb2bc9-eb28-40f4-aee1-ee156c92742e\"},{\"time\":1551859150860,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5ddb2bc9-eb28-40f4-aee1-ee156c92742e\"},{\"time\":1551859151653,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"6036f41c-1f46-40a5-8d4d-27e6a242d4e1\"},{\"time\":1551859151757,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"6036f41c-1f46-40a5-8d4d-27e6a242d4e1\"},{\"time\":1551859153338,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551859153443,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551859154038,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551859154145,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551859155064,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5a7d2377-e3fa-4b2b-ba6d-d27802a6514e\"},{\"time\":1551859155173,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5a7d2377-e3fa-4b2b-ba6d-d27802a6514e\"},{\"time\":1551859155772,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551859155879,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551859156355,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551859156461,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551859158006,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"f096df5d-cccd-43ab-a185-6e62fab5b5ef\"},{\"time\":1551859158113,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"f096df5d-cccd-43ab-a185-6e62fab5b5ef\"},{\"time\":1551859158692,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"b01dab1a-3993-4ef8-a789-169dd367fc91\"},{\"time\":1551859158799,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"b01dab1a-3993-4ef8-a789-169dd367fc91\"},{\"time\":1551859159289,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"d787aa77-0dc7-4b37-8def-b8996cc13ba9\"},{\"time\":1551859159395,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"d787aa77-0dc7-4b37-8def-b8996cc13ba9\"},{\"time\":1551859159907,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"2dfe4df0-c7f2-450e-b834-6e5e639ff382\"},{\"time\":1551859163325,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"eea99276-10aa-4510-a152-8a5ec36b3394\"},{\"time\":1551859163434,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"eea99276-10aa-4510-a152-8a5ec36b3394\"}]"
+    }
+  },
+  {
+    "id": "a4ff4005-b690-4ae6-9c1a-48bf696bd281",
+    "answers": [
+      {
+        "refQuestion": "004ceab4-389d-429a-9949-ed0801d4880d",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551854941773,
+          "endTime": 1551854975311,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "952e1384-a02f-46f2-82ec-d0410ded3bbe",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551854975446,
+          "endTime": 1551854979650,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "34f11a3b-835a-4483-afbb-e313c69f40b7",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551854979773,
+          "endTime": 1551854983236,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "ecf6742d-b096-4e04-b251-a78ef4e31e71",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551854983362,
+          "endTime": 1551854984631,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "593f6e60-6163-4407-90de-cbb17b474148",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551854984760,
+          "endTime": 1551854998155,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "7852042c-1c95-459d-aeb3-4e1edeb2c046",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551860389596,
+          "endTime": 1551860390623,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "4b94df29-7a54-468d-95b6-7fadc1d23feb",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551860406106,
+          "endTime": 1551860406867,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "042a8743-18f9-47da-b052-dacbcc95729e",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551860412678,
+          "endTime": 1551860413442,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "3e1c92af-cc9b-4f3b-8999-a3cf171357df",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551860413574,
+          "endTime": 1551860414147,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551860414272,
+          "endTime": 1551860414889,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "c560e275-f183-42de-856b-f762511a4d51",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551860415030,
+          "endTime": 1551860415589,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "d20d568f-3d83-4894-a245-738c49889d2f",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551860415718,
+          "endTime": 1551860416547,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "373cc915-582c-46d9-81bf-7ca290ee77a4",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551860416675,
+          "endTime": 1551860421861,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "945de19b-dffc-4f34-817f-b001f777c9aa",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551860421995,
+          "endTime": 1551860422739,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551860422870,
+          "endTime": 1551860423179,
+          "misc": ""
+        }
+      }
+    ],
+    "refAdmissionTicket": "78ca6690-5957-4eaa-a1f4-712a26961763",
+    "oplog": {
+      "startTime": 1551854790995,
+      "endTime": 1551860432312,
+      "misc": "[{\"time\":1551854975312,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"004ceab4-389d-429a-9949-ed0801d4880d\"},{\"time\":1551854975423,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"004ceab4-389d-429a-9949-ed0801d4880d\"},{\"time\":1551854979651,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551854979763,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551854983236,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551854983347,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551854984631,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551854984749,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551854998155,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551854998269,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551860390624,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860396089,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860396689,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860397923,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860398698,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860403707,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860404336,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860406092,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860406867,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551860406979,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551860408240,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551860413442,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551860413557,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551860414147,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q3\",\"ref_question\":\"3e1c92af-cc9b-4f3b-8999-a3cf171357df\"},{\"time\":1551860414261,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"3e1c92af-cc9b-4f3b-8999-a3cf171357df\"},{\"time\":1551860414889,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7\"},{\"time\":1551860415004,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7\"},{\"time\":1551860415590,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c560e275-f183-42de-856b-f762511a4d51\"},{\"time\":1551860415703,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c560e275-f183-42de-856b-f762511a4d51\"},{\"time\":1551860416548,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"d20d568f-3d83-4894-a245-738c49889d2f\"},{\"time\":1551860416663,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"d20d568f-3d83-4894-a245-738c49889d2f\"},{\"time\":1551860421861,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"373cc915-582c-46d9-81bf-7ca290ee77a4\"},{\"time\":1551860421974,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"373cc915-582c-46d9-81bf-7ca290ee77a4\"},{\"time\":1551860422740,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q3\",\"ref_question\":\"945de19b-dffc-4f34-817f-b001f777c9aa\"},{\"time\":1551860422857,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"945de19b-dffc-4f34-817f-b001f777c9aa\"},{\"time\":1551860423179,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b\"},{\"time\":1551860423317,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b\"},{\"time\":1551860423593,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551860423715,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551860423907,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"}]"
+    }
+  },
+  {
+    "id": "117c1149-598c-4dd1-98c6-17328626329c",
+    "answers": [
+      {
+        "refQuestion": "004ceab4-389d-429a-9949-ed0801d4880d",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551874328352,
+          "endTime": 1551874329770,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "952e1384-a02f-46f2-82ec-d0410ded3bbe",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551874329910,
+          "endTime": 1551874332362,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "34f11a3b-835a-4483-afbb-e313c69f40b7",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551874332502,
+          "endTime": 1551874333864,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "ecf6742d-b096-4e04-b251-a78ef4e31e71",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551874334003,
+          "endTime": 1551874337336,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "593f6e60-6163-4407-90de-cbb17b474148",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551874337464,
+          "endTime": 1551874340035,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "042a8743-18f9-47da-b052-dacbcc95729e",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551874340173,
+          "endTime": 1551874341046,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "3e1c92af-cc9b-4f3b-8999-a3cf171357df",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551874341173,
+          "endTime": 1551874341911,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551874342041,
+          "endTime": 1551874347895,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "c560e275-f183-42de-856b-f762511a4d51",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551874348036,
+          "endTime": 1551874349018,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "d20d568f-3d83-4894-a245-738c49889d2f",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551874349147,
+          "endTime": 1551874352634,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "373cc915-582c-46d9-81bf-7ca290ee77a4",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551874352786,
+          "endTime": 1551874353567,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "4b94df29-7a54-468d-95b6-7fadc1d23feb",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551874363810,
+          "endTime": 1551874364503,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "7852042c-1c95-459d-aeb3-4e1edeb2c046",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551874364631,
+          "endTime": 1551874365130,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551874494966,
+          "endTime": 1551874495949,
+          "misc": ""
+        }
+      }
+    ],
+    "refAdmissionTicket": "22c5579c-38f2-4152-8624-1b290ef87099",
+    "oplog": {
+      "startTime": 1551874210777,
+      "endTime": 1551875022008,
+      "misc": "[{\"time\":1551874329771,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"004ceab4-389d-429a-9949-ed0801d4880d\"},{\"time\":1551874329894,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"004ceab4-389d-429a-9949-ed0801d4880d\"},{\"time\":1551874332363,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551874332489,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551874333864,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551874333977,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551874337336,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551874337451,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551874340036,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874340163,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874341046,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551874341161,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551874341911,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q3\",\"ref_question\":\"3e1c92af-cc9b-4f3b-8999-a3cf171357df\"},{\"time\":1551874342025,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"3e1c92af-cc9b-4f3b-8999-a3cf171357df\"},{\"time\":1551874347895,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7\"},{\"time\":1551874348009,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7\"},{\"time\":1551874349018,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c560e275-f183-42de-856b-f762511a4d51\"},{\"time\":1551874349131,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c560e275-f183-42de-856b-f762511a4d51\"},{\"time\":1551874352634,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"d20d568f-3d83-4894-a245-738c49889d2f\"},{\"time\":1551874352749,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"d20d568f-3d83-4894-a245-738c49889d2f\"},{\"time\":1551874353567,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"373cc915-582c-46d9-81bf-7ca290ee77a4\"},{\"time\":1551874353682,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"373cc915-582c-46d9-81bf-7ca290ee77a4\"},{\"time\":1551874355616,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"945de19b-dffc-4f34-817f-b001f777c9aa\"},{\"time\":1551874364503,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874364619,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874365130,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874367163,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874379217,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874379711,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874380316,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874381136,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874382191,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874383088,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874384329,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874385095,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874385895,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874387187,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874388140,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874389525,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874390006,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874407838,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874410593,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874416511,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874417840,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874419291,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874493090,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"7852042c-1c95-459d-aeb3-4e1edeb2c046\"},{\"time\":1551874493684,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874494073,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b\"},{\"time\":1551874495949,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b\"},{\"time\":1551874496065,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b\"},{\"time\":1551874500294,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"4b94df29-7a54-468d-95b6-7fadc1d23feb\"},{\"time\":1551874501158,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"97c8ee62-d73f-4f39-ad8b-9233c2bd9f4b\"},{\"time\":1551874501785,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"945de19b-dffc-4f34-817f-b001f777c9aa\"},{\"time\":1551874502321,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"373cc915-582c-46d9-81bf-7ca290ee77a4\"},{\"time\":1551874502746,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"d20d568f-3d83-4894-a245-738c49889d2f\"},{\"time\":1551874503209,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c560e275-f183-42de-856b-f762511a4d51\"},{\"time\":1551874503581,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"a6d50665-c36f-4d8e-8b2d-9c99dbb72fb7\"},{\"time\":1551874503952,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"3e1c92af-cc9b-4f3b-8999-a3cf171357df\"},{\"time\":1551874504319,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551874504735,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874506635,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551874507312,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874507658,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551874509055,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874509918,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551874543603,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551874544166,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551874544652,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874545634,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"042a8743-18f9-47da-b052-dacbcc95729e\"},{\"time\":1551874545950,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"593f6e60-6163-4407-90de-cbb17b474148\"},{\"time\":1551874546324,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ecf6742d-b096-4e04-b251-a78ef4e31e71\"},{\"time\":1551874546776,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"},{\"time\":1551874547135,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551874548340,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"004ceab4-389d-429a-9949-ed0801d4880d\"},{\"time\":1551874548674,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"952e1384-a02f-46f2-82ec-d0410ded3bbe\"},{\"time\":1551874548987,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"34f11a3b-835a-4483-afbb-e313c69f40b7\"}]"
+    }
+  },
+  {
+    "id": "047e4f6a-3996-49e4-b99e-c751c7e4e285",
+    "answers": [
+      {
+        "refQuestion": "bdafdb11-c812-4695-a92e-8f03d19308de",
+        "result": {
+          "style": "JSSW_Q4",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551876571330,
+          "endTime": 1551876574776,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "fd7431d1-5504-4f6b-9e34-795106b24346",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876574894,
+          "endTime": 1551876575738,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "87703a7b-0f2e-41ff-8bbe-0c65a9251ec5",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876575852,
+          "endTime": 1551876576373,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "700c5809-b93b-4f47-9a9a-36717e9819fa",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876576485,
+          "endTime": 1551876577219,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "65251c52-949f-4fbb-ae6d-af2fd4c13a7b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551876577332,
+          "endTime": 1551876577898,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "306ceffb-9bcb-4358-bc43-020d5adce905",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551876578016,
+          "endTime": 1551876578506,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "5f8ba390-63dd-4a4e-a1ed-ffeb0bbb3318",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876578620,
+          "endTime": 1551876579744,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "684a179e-1fff-41f7-b3f4-a7ce306b5fbd",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876579862,
+          "endTime": 1551876580856,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "a189a147-3a69-4cf8-a08e-84130a0c69e8",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876580972,
+          "endTime": 1551876581678,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "e8db9160-36c6-46a4-baa0-c0adb6f230d7",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876581794,
+          "endTime": 1551876583222,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "ec68493e-2bf4-4525-b17f-257f1e3d1959",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876583337,
+          "endTime": 1551876583941,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "1786ee15-2fda-4450-bad1-47e1335e3ca8",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876584056,
+          "endTime": 1551876584690,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "81f2444a-678c-4a7c-86ba-147de15559e2",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876584804,
+          "endTime": 1551876585389,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "dbe04188-2aff-46c4-984d-839a959c21aa",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551876585505,
+          "endTime": 1551876586558,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "53d1e4a0-8a5d-41ca-9eb1-f5f05d5a0b6b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551876586674,
+          "endTime": 1551876587139,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "35d10bb2-fdf7-4f61-96ca-1e93b5af3222",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876587255,
+          "endTime": 1551876589140,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "6ab8156e-3188-40b3-8f31-8cf1acc76e51",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876589259,
+          "endTime": 1551876589841,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "c2a24d7a-cb8e-4c92-a0bb-1ae348b90eaa",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876589957,
+          "endTime": 1551876590405,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "1046af88-dadd-4737-9e9d-e2604a448c05",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876590522,
+          "endTime": 1551876590989,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "5332cb13-e330-44e1-931c-5a2ed19e0c0c",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876591105,
+          "endTime": 1551876591491,
+          "misc": ""
+        }
+      }
+    ],
+    "refAdmissionTicket": "c1f484a5-678b-474e-bc7a-f21cfa8fa00d",
+    "oplog": {
+      "startTime": 1551874978063,
+      "endTime": 1551876673558,
+      "misc": "[{\"time\":1551876328798,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876329476,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876334379,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876335965,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876342730,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876343365,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876343848,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876344330,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876344848,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"65251c52-949f-4fbb-ae6d-af2fd4c13a7b\"},{\"time\":1551876345332,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876345795,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876347547,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876348631,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876517353,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876544491,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876545471,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876568495,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876569171,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876570120,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876571322,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876574777,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876574887,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876575738,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876575845,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876576373,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876576480,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876577219,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876577326,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876577898,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"65251c52-949f-4fbb-ae6d-af2fd4c13a7b\"},{\"time\":1551876578008,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"65251c52-949f-4fbb-ae6d-af2fd4c13a7b\"},{\"time\":1551876578506,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"306ceffb-9bcb-4358-bc43-020d5adce905\"},{\"time\":1551876578614,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"306ceffb-9bcb-4358-bc43-020d5adce905\"},{\"time\":1551876579744,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5f8ba390-63dd-4a4e-a1ed-ffeb0bbb3318\"},{\"time\":1551876579854,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5f8ba390-63dd-4a4e-a1ed-ffeb0bbb3318\"},{\"time\":1551876580857,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q3\",\"ref_question\":\"684a179e-1fff-41f7-b3f4-a7ce306b5fbd\"},{\"time\":1551876580964,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"684a179e-1fff-41f7-b3f4-a7ce306b5fbd\"},{\"time\":1551876581679,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"a189a147-3a69-4cf8-a08e-84130a0c69e8\"},{\"time\":1551876581787,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"a189a147-3a69-4cf8-a08e-84130a0c69e8\"},{\"time\":1551876583222,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"e8db9160-36c6-46a4-baa0-c0adb6f230d7\"},{\"time\":1551876583330,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"e8db9160-36c6-46a4-baa0-c0adb6f230d7\"},{\"time\":1551876583941,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ec68493e-2bf4-4525-b17f-257f1e3d1959\"},{\"time\":1551876584049,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ec68493e-2bf4-4525-b17f-257f1e3d1959\"},{\"time\":1551876584690,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"1786ee15-2fda-4450-bad1-47e1335e3ca8\"},{\"time\":1551876584798,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"1786ee15-2fda-4450-bad1-47e1335e3ca8\"},{\"time\":1551876585389,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"81f2444a-678c-4a7c-86ba-147de15559e2\"},{\"time\":1551876585498,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"81f2444a-678c-4a7c-86ba-147de15559e2\"},{\"time\":1551876586558,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"dbe04188-2aff-46c4-984d-839a959c21aa\"},{\"time\":1551876586666,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"dbe04188-2aff-46c4-984d-839a959c21aa\"},{\"time\":1551876587139,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"53d1e4a0-8a5d-41ca-9eb1-f5f05d5a0b6b\"},{\"time\":1551876587248,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"53d1e4a0-8a5d-41ca-9eb1-f5f05d5a0b6b\"},{\"time\":1551876589140,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"35d10bb2-fdf7-4f61-96ca-1e93b5af3222\"},{\"time\":1551876589251,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"35d10bb2-fdf7-4f61-96ca-1e93b5af3222\"},{\"time\":1551876589841,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"6ab8156e-3188-40b3-8f31-8cf1acc76e51\"},{\"time\":1551876589950,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"6ab8156e-3188-40b3-8f31-8cf1acc76e51\"},{\"time\":1551876590405,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c2a24d7a-cb8e-4c92-a0bb-1ae348b90eaa\"},{\"time\":1551876590514,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c2a24d7a-cb8e-4c92-a0bb-1ae348b90eaa\"},{\"time\":1551876590989,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q3\",\"ref_question\":\"1046af88-dadd-4737-9e9d-e2604a448c05\"},{\"time\":1551876591097,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"1046af88-dadd-4737-9e9d-e2604a448c05\"},{\"time\":1551876591491,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"},{\"time\":1551876592045,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"},{\"time\":1551876593243,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"},{\"time\":1551876594890,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"}]"
+    }
+  },
+  {
+    "id": "047e4f6a-3996-49e4-b99e-c751c7e4e285",
+    "answers": [
+      {
+        "refQuestion": "bdafdb11-c812-4695-a92e-8f03d19308de",
+        "result": {
+          "style": "JSSW_Q4",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551876571330,
+          "endTime": 1551876574776,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "fd7431d1-5504-4f6b-9e34-795106b24346",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876574894,
+          "endTime": 1551876575738,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "87703a7b-0f2e-41ff-8bbe-0c65a9251ec5",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876575852,
+          "endTime": 1551876576373,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "700c5809-b93b-4f47-9a9a-36717e9819fa",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876576485,
+          "endTime": 1551876577219,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "65251c52-949f-4fbb-ae6d-af2fd4c13a7b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551876577332,
+          "endTime": 1551876577898,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "306ceffb-9bcb-4358-bc43-020d5adce905",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551876578016,
+          "endTime": 1551876578506,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "5f8ba390-63dd-4a4e-a1ed-ffeb0bbb3318",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876578620,
+          "endTime": 1551876579744,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "684a179e-1fff-41f7-b3f4-a7ce306b5fbd",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876579862,
+          "endTime": 1551876580856,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "a189a147-3a69-4cf8-a08e-84130a0c69e8",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876580972,
+          "endTime": 1551876581678,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "e8db9160-36c6-46a4-baa0-c0adb6f230d7",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876581794,
+          "endTime": 1551876583222,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "ec68493e-2bf4-4525-b17f-257f1e3d1959",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876583337,
+          "endTime": 1551876583941,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "1786ee15-2fda-4450-bad1-47e1335e3ca8",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876584056,
+          "endTime": 1551876584690,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "81f2444a-678c-4a7c-86ba-147de15559e2",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876584804,
+          "endTime": 1551876585389,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "dbe04188-2aff-46c4-984d-839a959c21aa",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "C"
+        },
+        "oplog": {
+          "startTime": 1551876585505,
+          "endTime": 1551876586558,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "53d1e4a0-8a5d-41ca-9eb1-f5f05d5a0b6b",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "D"
+        },
+        "oplog": {
+          "startTime": 1551876586674,
+          "endTime": 1551876587139,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "35d10bb2-fdf7-4f61-96ca-1e93b5af3222",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "A"
+        },
+        "oplog": {
+          "startTime": 1551876587255,
+          "endTime": 1551876589140,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "6ab8156e-3188-40b3-8f31-8cf1acc76e51",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876589259,
+          "endTime": 1551876589841,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "c2a24d7a-cb8e-4c92-a0bb-1ae348b90eaa",
+        "result": {
+          "style": "JSSW_Q1",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876589957,
+          "endTime": 1551876590405,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "1046af88-dadd-4737-9e9d-e2604a448c05",
+        "result": {
+          "style": "JSSW_Q3",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876590522,
+          "endTime": 1551876590989,
+          "misc": ""
+        }
+      },
+      {
+        "refQuestion": "5332cb13-e330-44e1-931c-5a2ed19e0c0c",
+        "result": {
+          "style": "JSSW_Q2",
+          "content": "B"
+        },
+        "oplog": {
+          "startTime": 1551876591105,
+          "endTime": 1551876591491,
+          "misc": ""
+        }
+      }
+    ],
+    "refAdmissionTicket": "c1f484a5-678b-474e-bc7a-f21cfa8fa00d",
+    "oplog": {
+      "startTime": 1551874978063,
+      "endTime": 1551876673558,
+      "misc": "[{\"time\":1551876328798,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876329476,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876334379,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876335965,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876342730,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876343365,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876343848,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876344330,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876344848,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"65251c52-949f-4fbb-ae6d-af2fd4c13a7b\"},{\"time\":1551876345332,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876345795,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876347547,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876348631,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876517353,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876544491,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876545471,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876568495,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876569171,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876570120,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876571322,\"action\":\"prev\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876574777,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876574887,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q4\",\"ref_question\":\"bdafdb11-c812-4695-a92e-8f03d19308de\"},{\"time\":1551876575738,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876575845,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"fd7431d1-5504-4f6b-9e34-795106b24346\"},{\"time\":1551876576373,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876576480,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"87703a7b-0f2e-41ff-8bbe-0c65a9251ec5\"},{\"time\":1551876577219,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876577326,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"700c5809-b93b-4f47-9a9a-36717e9819fa\"},{\"time\":1551876577898,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"65251c52-949f-4fbb-ae6d-af2fd4c13a7b\"},{\"time\":1551876578008,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"65251c52-949f-4fbb-ae6d-af2fd4c13a7b\"},{\"time\":1551876578506,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"306ceffb-9bcb-4358-bc43-020d5adce905\"},{\"time\":1551876578614,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"306ceffb-9bcb-4358-bc43-020d5adce905\"},{\"time\":1551876579744,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5f8ba390-63dd-4a4e-a1ed-ffeb0bbb3318\"},{\"time\":1551876579854,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"5f8ba390-63dd-4a4e-a1ed-ffeb0bbb3318\"},{\"time\":1551876580857,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q3\",\"ref_question\":\"684a179e-1fff-41f7-b3f4-a7ce306b5fbd\"},{\"time\":1551876580964,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"684a179e-1fff-41f7-b3f4-a7ce306b5fbd\"},{\"time\":1551876581679,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"a189a147-3a69-4cf8-a08e-84130a0c69e8\"},{\"time\":1551876581787,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"a189a147-3a69-4cf8-a08e-84130a0c69e8\"},{\"time\":1551876583222,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"e8db9160-36c6-46a4-baa0-c0adb6f230d7\"},{\"time\":1551876583330,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"e8db9160-36c6-46a4-baa0-c0adb6f230d7\"},{\"time\":1551876583941,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ec68493e-2bf4-4525-b17f-257f1e3d1959\"},{\"time\":1551876584049,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"ec68493e-2bf4-4525-b17f-257f1e3d1959\"},{\"time\":1551876584690,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"1786ee15-2fda-4450-bad1-47e1335e3ca8\"},{\"time\":1551876584798,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q2\",\"ref_question\":\"1786ee15-2fda-4450-bad1-47e1335e3ca8\"},{\"time\":1551876585389,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"81f2444a-678c-4a7c-86ba-147de15559e2\"},{\"time\":1551876585498,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"81f2444a-678c-4a7c-86ba-147de15559e2\"},{\"time\":1551876586558,\"action\":\"choice\",\"content\":\"C\",\"style\":\"JSSW_Q1\",\"ref_question\":\"dbe04188-2aff-46c4-984d-839a959c21aa\"},{\"time\":1551876586666,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"dbe04188-2aff-46c4-984d-839a959c21aa\"},{\"time\":1551876587139,\"action\":\"choice\",\"content\":\"D\",\"style\":\"JSSW_Q1\",\"ref_question\":\"53d1e4a0-8a5d-41ca-9eb1-f5f05d5a0b6b\"},{\"time\":1551876587248,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"53d1e4a0-8a5d-41ca-9eb1-f5f05d5a0b6b\"},{\"time\":1551876589140,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q1\",\"ref_question\":\"35d10bb2-fdf7-4f61-96ca-1e93b5af3222\"},{\"time\":1551876589251,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"35d10bb2-fdf7-4f61-96ca-1e93b5af3222\"},{\"time\":1551876589841,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"6ab8156e-3188-40b3-8f31-8cf1acc76e51\"},{\"time\":1551876589950,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"6ab8156e-3188-40b3-8f31-8cf1acc76e51\"},{\"time\":1551876590405,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c2a24d7a-cb8e-4c92-a0bb-1ae348b90eaa\"},{\"time\":1551876590514,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q1\",\"ref_question\":\"c2a24d7a-cb8e-4c92-a0bb-1ae348b90eaa\"},{\"time\":1551876590989,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q3\",\"ref_question\":\"1046af88-dadd-4737-9e9d-e2604a448c05\"},{\"time\":1551876591097,\"action\":\"next\",\"content\":\"\",\"style\":\"JSSW_Q3\",\"ref_question\":\"1046af88-dadd-4737-9e9d-e2604a448c05\"},{\"time\":1551876591491,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"},{\"time\":1551876592045,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"},{\"time\":1551876593243,\"action\":\"choice\",\"content\":\"A\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"},{\"time\":1551876594890,\"action\":\"choice\",\"content\":\"B\",\"style\":\"JSSW_Q2\",\"ref_question\":\"5332cb13-e330-44e1-931c-5a2ed19e0c0c\"}]"
+    }
+  }
+]
+

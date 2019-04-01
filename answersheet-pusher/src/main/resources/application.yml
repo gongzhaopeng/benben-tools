@@ -1,0 +1,12 @@
+server:
+  port: 0
+
+service:
+  exam:
+    answersheet:
+      address: http://192.168.30.200:8086/openeva/answer-sheets/{ticketId}
+    admission_ticket:
+      address: http://192.168.30.200:8086/openeva/admission-tickets/test/{testId}
+
+test:
+  testid: a47e20c8-3b14-4763-9f7e-9868ffe2a2f5
