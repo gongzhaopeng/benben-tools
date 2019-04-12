@@ -31,4 +31,13 @@ class XSCAidConfiguration {
 
   @BeanProperty
   var singleTestPath: String = _
+
+  @BeanProperty
+  var pressureForeignIdPrefix: String = _
+
+  @BeanProperty
+  var pressureUserCount: Int = _
+
+  @BeanProperty
+  var godVcode: Int = _
 }

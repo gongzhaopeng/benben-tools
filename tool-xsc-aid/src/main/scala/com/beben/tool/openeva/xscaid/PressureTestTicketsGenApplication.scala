@@ -1,5 +1,6 @@
 package com.beben.tool.openeva.xscaid
 
+import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
 import com.beben.tool.openeva.xscaid.model.ForeignUser
 import com.beben.tool.openeva.xscaid.service.TicketService
 import org.springframework.boot.SpringApplication
@@ -17,12 +18,11 @@ object PressureTestTicketsGenApplication extends App {
 
   val ticketService = applicationContext.getBean(classOf[TicketService])
 
-  val foreignIdPrefix = s"FOREIGN_USER:TEST:PRESSURE:"
-  val pressureTestUserCount = 500
+  val xSCAidConfiguration = applicationContext.getBean(classOf[XSCAidConfiguration])
 
-  val foreignUsers = Range(0, pressureTestUserCount).map(i => {
+  val foreignUsers = Range(0, xSCAidConfiguration.getPressureUserCount).map(i => {
 
-    val foreignId = foreignIdPrefix + i
+    val foreignId = xSCAidConfiguration.getPressureForeignIdPrefix + i
 
     val foreignUser = new ForeignUser
     foreignUser.setForeignId(foreignId)
