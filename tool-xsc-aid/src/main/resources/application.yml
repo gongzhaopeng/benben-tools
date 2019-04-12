@@ -1,0 +1,6 @@
+xsc:
+  aid:
+    x-auth-code: GOD_BLESS_ME
+    server-base-url: http://localhost:8086/openeva
+    ticket-gen-path: /admission-tickets/test/{test-id}
+
