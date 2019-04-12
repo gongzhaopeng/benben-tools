@@ -28,4 +28,7 @@ class XSCAidConfiguration {
 
   @BeanProperty
   var testIds: JList[String] = _
+
+  @BeanProperty
+  var singleTestPath: String = _
 }

@@ -3,15 +3,14 @@ package com.beben.tool.openeva.xscaid.service
 import java.util.{List => JList}
 
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
-import com.beben.tool.openeva.xscaid.model.ForeignUser
+import com.beben.tool.openeva.xscaid.model.{ForeignUser, Ticket}
+import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.{HttpEntity, HttpMethod}
 import org.springframework.stereotype.Service
 import org.springframework.util.LinkedMultiValueMap
 import org.springframework.web.client.RestTemplate
-import com.beben.tool.openeva.xscaid.model.Ticket
-import org.slf4j.LoggerFactory
 
 @Service
 class TicketService(@Autowired private val restTemplate: RestTemplate,
