@@ -6,14 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.SpringApplication;
 
 @SpringBootApplication
-class AccountsGenApplication {
+class TicketGenApplication {
 
 }
 
-object AccountsGenApplication extends App {
+object TicketGenApplication extends App {
 
   val applicationContext =
-    SpringApplication.run(classOf[AccountsGenApplication], args: _*)
+    SpringApplication.run(classOf[TicketGenApplication], args: _*)
 
   val ticketService = applicationContext.getBean(classOf[TicketService])
 
