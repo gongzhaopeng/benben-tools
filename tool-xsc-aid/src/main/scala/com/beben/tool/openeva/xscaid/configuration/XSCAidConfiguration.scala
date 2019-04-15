@@ -27,10 +27,19 @@ class XSCAidConfiguration {
   var ticketsByUidPath: String = _
 
   @BeanProperty
-  var testIds: JList[String] = _
+  var singleTestPath: String = _
 
   @BeanProperty
-  var singleTestPath: String = _
+  var loginPath: String = _
+
+  @BeanProperty
+  var answerPostPath: String = _
+
+  @BeanProperty
+  var answersheetPostPath: String = _
+
+  @BeanProperty
+  var testIds: JList[String] = _
 
   @BeanProperty
   var pressureForeignIdPrefix: String = _
@@ -39,5 +48,17 @@ class XSCAidConfiguration {
   var pressureUserCount: Int = _
 
   @BeanProperty
-  var godVcode: Int = _
+  var ptLeadingUserIndex: Int = _
+
+  @BeanProperty
+  var ptUserCount: Int = _
+
+  @BeanProperty
+  var answerSubmissionRepeat: Int = _
+
+  @BeanProperty
+  var answerCommitDelay: Long = _
+
+  @BeanProperty
+  var godVcode: String = _
 }
