@@ -18,7 +18,8 @@ object TicketGenApplication extends App {
   val ticketService = applicationContext.getBean(classOf[TicketService])
 
   val identityToPhoneMap = Map(
-    "53242819851018263X" -> "18612447216")
+    "130731199308031513" -> "13717650684",  // 刘进轩
+    "140602199310200000" -> "17600208132")  // 唐天星
 
   val fUsers = identityToPhoneMap.map({
     case (identity, phone) =>

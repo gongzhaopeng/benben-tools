@@ -9,7 +9,7 @@ xsc:
     login-path: /login/vcode
     answer-post-path: /answers/test/{test-id}/user/{user-id}
     answersheet-post-path: /answer-sheets/{ticket-id}
-    test-ids: fad153df-a125-452d-a726-ee18d5142279, 21dc7f9d-80a7-41da-8759-d49f936501ff, 62ab7ec7-3edf-481a-aec3-352fbe145681, 6cf31943-4d59-4fde-9781-ad0aa0b72ec6, 7d6d3cac-1235-4d2b-98cd-a508d5ad7d08
+    test-ids: f77b2811-20ac-4701-b35e-3a9074d34080, fad153df-a125-452d-a726-ee18d5142279, 21dc7f9d-80a7-41da-8759-d49f936501ff, 62ab7ec7-3edf-481a-aec3-352fbe145681, 6cf31943-4d59-4fde-9781-ad0aa0b72ec6, 7d6d3cac-1235-4d2b-98cd-a508d5ad7d08
     pressure-foreign-id-prefix: 'FOREIGN_USER:TEST:PRESSURE:'
     pressure-user-count: 500
     pt-leading-user-index: 0
