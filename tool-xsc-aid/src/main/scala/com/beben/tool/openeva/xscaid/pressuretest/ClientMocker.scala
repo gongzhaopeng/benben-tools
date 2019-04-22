@@ -11,6 +11,9 @@ import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component
 import org.springframework.web.client.RestTemplate
 
+import scala.util.Random
+import scala.collection.JavaConverters._
+
 @Component
 @Scope("prototype")
 class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfiguration,
@@ -21,70 +24,156 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
 
   private var personalExamContext: PersonalExamContext = _
 
-  def mock(foreignId: String): Unit = {
+  var foreignId: String = _
+
+  private var userLevel: Int = _
+
+  private var testAnswersArray: Array[List[Answer]] = _
+  private var testAnswerSheetArray: Array[AnswerSheet] = _
+  private var testAnswerSubmitDelayArray: Array[List[Long]] = _
+
+  def init(foreignId: String): Unit = {
+
+    this.foreignId = foreignId
+
+    val random = new Random()
+
+    userLevel = random.nextInt(xSCAidConfiguration.getUserLevelCount)
 
     personalExamContext =
       loginService.loginByVCode(foreignId, xSCAidConfiguration.getGodVcode)
 
-    personalExamContext.getTests.forEach(
-      mockTest(_, personalExamContext.getUserId,
-        xSCAidConfiguration.getAnswerSubmissionRepeat,
-        xSCAidConfiguration.getAnswerCommitDelay)
-    )
+    val tests = personalExamContext.getTests.asScala
+
+    testAnswersArray = new Array[List[Answer]](tests.length)
+    testAnswerSheetArray = new Array[AnswerSheet](tests.length)
+    testAnswerSubmitDelayArray = new Array[List[Long]](tests.length)
+
+    val actualAnswerSubmissionRepeat =
+      (1 - xSCAidConfiguration.getAnswersCountRatioGap * userLevel) *
+        xSCAidConfiguration.getAnswerSubmissionRepeat
+
+    tests.zipWithIndex.foreach {
+      case (testInfo, index) =>
+        val curTime = System.currentTimeMillis()
+
+        val answers = testInfo.getTestPaper.getQuestionSets.asScala.flatMap(
+          _.getQuestions.asScala).map(question => {
+
+          val answer = new Answer
+
+          answer.setRefQuestion(question.getId)
+
+          val opLog = new OpLog
+          opLog.setStartTime(curTime)
+          opLog.setEndTime(curTime)
+          opLog.setMisc("Mocked misc.")
+          answer.setOplog(opLog)
+
+          val choiceResult = new ChoiceResult
+          choiceResult.setContent("Mocked content.")
+          choiceResult.setStyle("Mocked style.")
+          answer.setResult(choiceResult)
+
+          answer
+        })
+
+        testAnswersArray(index) =
+          Range(0, actualAnswerSubmissionRepeat.ceil.toInt)
+            .map(_ => answers).reduce(_ ++ _)
+            .slice(0, (answers.size * actualAnswerSubmissionRepeat).ceil.toInt)
+            .toList
+
+        val answerSheet = new AnswerSheet
+        answerSheet.setAnswers(answers.asJava)
+        val opLog = new OpLog
+        opLog.setStartTime(curTime)
+        opLog.setEndTime(curTime)
+        opLog.setMisc("Mocked misc.")
+        answerSheet.setOplog(opLog)
+        answerSheet.setRefAAdmissionTicket(testInfo.getTicketId)
+        testAnswerSheetArray(index) = answerSheet
+    }
+
+    var testTimeRatioList = Range(0, tests.length - 1).map(_ =>
+      1 - (random.nextDouble() * 2 - 1) * xSCAidConfiguration.getTestTimeDeviation)
+      .toList
+    val finalTestTimeRatio =
+      1 * tests.length - testTimeRatioList.sum
+    testTimeRatioList :+= finalTestTimeRatio
+
+    val finalAsSubmissionPreSpan =
+      random.nextInt(xSCAidConfiguration.getFinalAsSubmissionWindowSpan)
+    val actualExamDuration =
+      xSCAidConfiguration.getExamDuration - finalAsSubmissionPreSpan
+    val averageTestDuration = actualExamDuration.toDouble / tests.length
+
+    testTimeRatioList.map(ratio => averageTestDuration * ratio * 1000).zipWithIndex.foreach {
+      case (testTime, index) =>
+        // +1 for answer-sheet submission
+        val submissionCount = testAnswersArray(index).length + 1
+        val averageSubmitDelay = testTime / submissionCount
+
+        var delaySerial = Range(0, (submissionCount / 2.0).ceil.toInt).flatMap(_ => {
+          val delayDeviation = (random.nextDouble() * 2 - 1) *
+            xSCAidConfiguration.getSubmissionDelayDeviation
+
+          Array(
+            (averageSubmitDelay * (1 - delayDeviation)).toLong,
+            (averageSubmitDelay * (1 + delayDeviation)).toLong)
+        }).toArray
+
+        if (submissionCount % 2 != 0)
+          delaySerial = delaySerial.slice(0, delaySerial.length - 1)
+
+        delaySerial(delaySerial.length - 1) =
+          testTime.toLong - delaySerial.slice(0, delaySerial.length - 1).sum
+
+        testAnswerSubmitDelayArray(index) = delaySerial.toList
+    }
+
+    assert(testAnswersArray.length == tests.length)
+    assert(testAnswerSheetArray.length == tests.length)
+    assert(testAnswerSubmitDelayArray.length == tests.length)
+
+    testAnswersArray.zipWithIndex.foreach {
+      case (testAnswers, index) =>
+        assert(testAnswers.length + 1 == testAnswerSubmitDelayArray(index).length)
+    }
   }
 
-  private def mockTest(testInfo: PersonalTestInfo, userId: String,
-                       answerSubmissionRepeat: Int, answerCommitDelay: Long): Unit = {
+  def mock(): Unit = {
 
-    import scala.collection.JavaConverters._
+    personalExamContext.getTests.asScala.zipWithIndex.foreach {
+      case (testInfo, index) =>
+        val answerList = testAnswersArray(index)
+        val delayList = testAnswerSubmitDelayArray(index)
+        val answerSheet = testAnswerSheetArray(index)
 
-    val curTime = System.currentTimeMillis()
+        answerList.zipWithIndex.foreach {
+          case (answer, answerIndex) =>
 
-    val answers = testInfo.getTestPaper.getQuestionSets.asScala.flatMap(
-      _.getQuestions.asScala).map(question => {
+            val answerBeginTime = System.currentTimeMillis()
+            val answerSubmissionResponse =
+              answerService.submitAnswer(testInfo.getTestId,
+                personalExamContext.getUserId, answer)
+            val answerEndTime = System.currentTimeMillis()
 
-      val answer = new Answer
+            assert(answerSubmissionResponse.getStatusCode == HttpStatus.OK)
 
-      answer.setRefQuestion(question.getId)
+            TimeUnit.MILLISECONDS.sleep(delayList(answerIndex) -
+              (answerEndTime - answerBeginTime))
+        }
 
-      val opLog = new OpLog
-      opLog.setStartTime(curTime)
-      opLog.setEndTime(curTime)
-      opLog.setMisc("Mocked misc.")
-      answer.setOplog(opLog)
+        val asBeginTime = System.currentTimeMillis()
+        val answerSheetSubmissionResponse =
+          answerSheetService.submitAnswersheet(testInfo.getTicketId, answerSheet)
+        val asEndTime = System.currentTimeMillis()
 
-      val choiceResult = new ChoiceResult
-      choiceResult.setContent("Mocked content.")
-      choiceResult.setStyle("Mocked style.")
-      answer.setResult(choiceResult)
+        assert(answerSheetSubmissionResponse.getStatusCode == HttpStatus.OK)
 
-      answer
-    })
-
-    0.until(answerSubmissionRepeat).foreach(_ =>
-
-      answers.foreach(answer => {
-
-        val answerSubmissionResponse =
-          answerService.submitAnswer(testInfo.getTestId, userId, answer)
-
-        assert(answerSubmissionResponse.getStatusCode == HttpStatus.OK)
-
-        TimeUnit.MICROSECONDS.sleep(answerCommitDelay)
-      })
-    )
-
-    val answerSheet = new AnswerSheet
-    answerSheet.setAnswers(answers.asJava)
-    val opLog = new OpLog
-    opLog.setStartTime(curTime)
-    opLog.setEndTime(curTime)
-    opLog.setMisc("Mocked misc.")
-    answerSheet.setOplog(opLog)
-    answerSheet.setRefAAdmissionTicket(testInfo.getTicketId)
-
-    val answerSheetSubmissionResponse =
-      answerSheetService.submitAnswersheet(testInfo.getTicketId, answerSheet)
-    assert(answerSheetSubmissionResponse.getStatusCode == HttpStatus.OK)
+        TimeUnit.MILLISECONDS.sleep(delayList.last -
+          (asEndTime - asBeginTime))
+    }
   }
 }

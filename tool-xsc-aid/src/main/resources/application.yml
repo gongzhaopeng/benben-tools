@@ -14,10 +14,24 @@ xsc:
     login-path: /login/vcode
     answer-post-path: /answers/test/{test-id}/user/{user-id}
     answersheet-post-path: /answer-sheets/{ticket-id}
+
     pressure-foreign-id-prefix: 'FOREIGN_USER:TEST:PRESSURE:'
     pressure-user-count: 500
     pt-leading-user-index: 0
-    pt-user-count: 250
-    answer-submission-repeat: 40
+    pt-user-count: 1
+    answer-submission-repeat: 40.0
+    # unit=>ms
     answer-commit-delay: 100
     god-vcode: 999999
+    # unit=>second
+    exam-duration: 1800
+    # 最后一个答卷提交窗口期的跨度
+    # unit=>second
+    final-as-submission-window-span: 300
+    test-time-deviation: 0.2
+    user-level-count: 5
+    answers-count-ratio-gap: 0.1
+    submission-delay-deviation: 0.2
+
+
+

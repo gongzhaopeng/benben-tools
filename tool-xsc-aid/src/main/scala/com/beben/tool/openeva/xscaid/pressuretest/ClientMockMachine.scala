@@ -16,31 +16,44 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
   private var applicationContext: ApplicationContext = _
 
+  private var clientMockers: List[ClientMocker] = _
+
   override def setApplicationContext(applicationContext: ApplicationContext): Unit = {
     this.applicationContext = applicationContext
   }
+
+  def init(): Unit = {
+
+    clientMockers = Range(xSCAidConfiguration.getPtLeadingUserIndex,
+      xSCAidConfiguration.getPtUserCount).map(i => {
+
+      val foreignId = xSCAidConfiguration.getPressureForeignIdPrefix + i
+
+      val clientMocker = applicationContext.getBean(classOf[ClientMocker])
+
+      clientMocker.init(foreignId)
+
+      clientMocker
+    }).toList
+  }
+
 
   def launch(): Unit = {
 
     val executorService = Executors.newFixedThreadPool(
       xSCAidConfiguration.getPressureUserCount)
 
-    Range(xSCAidConfiguration.getPtLeadingUserIndex,
-      xSCAidConfiguration.getPtUserCount).foreach(i => {
-
-      val foreignId = xSCAidConfiguration.getPressureForeignIdPrefix + i
+    clientMockers.foreach(clientMocker => {
 
       executorService.execute(() => {
 
         val startTime = System.currentTimeMillis
 
-        val clientMocker = applicationContext.getBean(classOf[ClientMocker])
-
-        clientMocker.mock(foreignId)
+        clientMocker.mock()
 
         val endTime = System.currentTimeMillis
 
-        log.info("Foreign-ID: {}, Time-Elapsed: {}", foreignId, endTime - startTime)
+        log.info("Foreign-ID: {}, Time-Elapsed: {}", clientMocker.foreignId, endTime - startTime)
       })
 
     })

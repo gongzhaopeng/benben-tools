@@ -14,7 +14,9 @@ object PressureTestApplication extends App {
   val applicationContext =
     SpringApplication.run(classOf[PressureTestApplication], args: _*)
 
-  applicationContext.getBean(classOf[ClientMockMachine]).launch()
+  val clientMockMachine = applicationContext.getBean(classOf[ClientMockMachine])
+  clientMockMachine.init()
+  clientMockMachine.launch()
 
   //  SpringApplication.exit(applicationContext)
 }

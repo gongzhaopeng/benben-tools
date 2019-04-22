@@ -54,11 +54,29 @@ class XSCAidConfiguration {
   var ptUserCount: Int = _
 
   @BeanProperty
-  var answerSubmissionRepeat: Int = _
+  var answerSubmissionRepeat: Double = _
 
   @BeanProperty
   var answerCommitDelay: Long = _
 
   @BeanProperty
   var godVcode: String = _
+
+  @BeanProperty
+  var examDuration: Int = _
+
+  @BeanProperty
+  var finalAsSubmissionWindowSpan: Int = _
+
+  @BeanProperty
+  var testTimeDeviation: Double = _
+
+  @BeanProperty
+  var userLevelCount: Int = _
+
+  @BeanProperty
+  var answersCountRatioGap: Double = _
+
+  @BeanProperty
+  var submissionDelayDeviation: Double = _
 }
