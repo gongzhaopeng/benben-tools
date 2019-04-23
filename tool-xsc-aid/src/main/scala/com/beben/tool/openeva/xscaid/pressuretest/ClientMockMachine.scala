@@ -1,6 +1,6 @@
 package com.beben.tool.openeva.xscaid.pressuretest
 
-import java.util.concurrent.Executors
+import java.util.concurrent.{ExecutorService, Executors}
 
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
 import org.slf4j.LoggerFactory
@@ -19,6 +19,8 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
   private var applicationContext: ApplicationContext = _
 
   private var clientMockers: List[ClientMocker] = _
+
+  private var executorService: ExecutorService = _
 
   override def setApplicationContext(applicationContext: ApplicationContext): Unit = {
     this.applicationContext = applicationContext
@@ -41,13 +43,13 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
       clientMocker
     }).toList
+
+    executorService = Executors.newFixedThreadPool(
+      xSCAidConfiguration.getPressureUserCount)
   }
 
 
   def launch(): Unit = {
-
-    val executorService = Executors.newFixedThreadPool(
-      xSCAidConfiguration.getPressureUserCount)
 
     clientMockers.foreach(clientMocker => {
 

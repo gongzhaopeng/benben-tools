@@ -35,7 +35,7 @@ xsc:
     answers-count-ratio-gap: 0.1
     submission-delay-deviation: 0.2
 
-    pt-schedule-cron: '0 15 * * * ?'
+    pt-schedule-cron: '0 30 * * * ?'
 
 
 
