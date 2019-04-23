@@ -129,7 +129,9 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         delaySerial(delaySerial.length - 1) =
           testTime.toLong - delaySerial.slice(0, delaySerial.length - 1).sum
 
-        testAnswerSubmitDelayArray(index) = delaySerial.toList
+        val shuffledDelaySerial = Random.shuffle(delaySerial.toList)
+
+        testAnswerSubmitDelayArray(index) = shuffledDelaySerial
     }
 
     assert(testAnswersArray.length == tests.length)
