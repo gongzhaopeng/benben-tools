@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.{ApplicationContext, ApplicationContextAware}
 import org.springframework.stereotype.Component
 
+import scala.util.Random
+
 @Component
 class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfiguration)
   extends ApplicationContextAware {
@@ -24,6 +26,8 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
   def init(): Unit = {
 
+    val random = new Random()
+
     clientMockers = Range(xSCAidConfiguration.getPtLeadingUserIndex,
       xSCAidConfiguration.getPtUserCount).map(i => {
 
@@ -31,7 +35,9 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
       val clientMocker = applicationContext.getBean(classOf[ClientMocker])
 
-      clientMocker.init(foreignId)
+      clientMocker.init(
+        random.nextInt(xSCAidConfiguration.getMockClientTriggerWindowSpan * 1000),
+        foreignId)
 
       clientMocker
     }).toList
@@ -46,6 +52,8 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
     clientMockers.foreach(clientMocker => {
 
       executorService.execute(() => {
+
+        log.info("Mock-Client[Foreign-ID=>{}] begins", clientMocker.foreignId)
 
         val startTime = System.currentTimeMillis
 

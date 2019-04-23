@@ -24,6 +24,9 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
 
   private var personalExamContext: PersonalExamContext = _
 
+  // unit=>ms
+  var triggerDelay: Int = _
+
   var foreignId: String = _
 
   private var userLevel: Int = _
@@ -32,7 +35,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
   private var testAnswerSheetArray: Array[AnswerSheet] = _
   private var testAnswerSubmitDelayArray: Array[List[Long]] = _
 
-  def init(foreignId: String): Unit = {
+  def init(triggerDelay: Int, foreignId: String): Unit = {
 
     this.foreignId = foreignId
 
@@ -145,6 +148,8 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
   }
 
   def mock(): Unit = {
+
+    TimeUnit.MILLISECONDS.sleep(triggerDelay)
 
     personalExamContext.getTests.asScala.zipWithIndex.foreach {
       case (testInfo, index) =>

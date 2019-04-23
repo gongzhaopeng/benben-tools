@@ -66,6 +66,9 @@ class XSCAidConfiguration {
   var examDuration: Int = _
 
   @BeanProperty
+  var mockClientTriggerWindowSpan: Int = _
+
+  @BeanProperty
   var finalAsSubmissionWindowSpan: Int = _
 
   @BeanProperty
