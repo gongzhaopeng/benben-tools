@@ -27,10 +27,6 @@ class PersonalTestInfo {
   var testId: String = _
 
   @BeanProperty
-  @JsonProperty("test_paper")
-  var testPaper: TestPaper = _
-
-  @BeanProperty
   @JsonProperty("ticket_id")
   var ticketId: String = _
 }

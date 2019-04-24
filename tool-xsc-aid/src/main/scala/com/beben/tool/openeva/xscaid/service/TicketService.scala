@@ -52,7 +52,7 @@ class TicketService(@Autowired private val restTemplate: RestTemplate,
     else {
       val url =
         xSCAidConfiguration.getServerBaseUrl + xSCAidConfiguration.getTicketsByUidPath
-      val request = new HttpEntity[ForeignUser](null, requestHeaders)
+      val request = new HttpEntity[Void](null, requestHeaders)
 
       val tickets = restTemplate.exchange(url, HttpMethod.GET, request,
         new ParameterizedTypeReference[JList[Ticket]] {}, uid).getBody

@@ -21,6 +21,10 @@ class PersonalExamContext {
   var duration: Int = _
 
   @BeanProperty
+  @JsonProperty("duration_tolerance")
+  var durationTolerance: Int = _
+
+  @BeanProperty
   @JsonProperty("ongoing_test")
   var ongoingTest: PersonalOngoingTest = _
 
@@ -29,8 +33,8 @@ class PersonalExamContext {
   var personalBeginTime: Long = _
 
   @BeanProperty
-  @JsonProperty("post_login_duration")
-  var postLoginDuration: Int = _
+  @JsonProperty("late_login_allowed")
+  var lateLoginAllowed: Boolean = _
 
   @BeanProperty
   @JsonProperty("pre_login_duration")

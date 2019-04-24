@@ -1,8 +1,11 @@
 package com.beben.tool.openeva.xscaid.service
 
+import java.util.{Map => JMap}
+
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
-import com.beben.tool.openeva.xscaid.model.{PersonalExamContext, VCodeLoginData}
+import com.beben.tool.openeva.xscaid.model.{PersonalExamContext, TestPaper, VCodeLoginData}
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.{HttpEntity, HttpMethod}
 import org.springframework.stereotype.Service
 import org.springframework.util.LinkedMultiValueMap
@@ -28,5 +31,15 @@ class LoginService(@Autowired private val restTemplate: RestTemplate,
 
     restTemplate.exchange(url, HttpMethod.POST, request, classOf[PersonalExamContext])
       .getBody
+  }
+
+  def fetchPapers(userId: String): JMap[String, TestPaper] = {
+
+    val url = xSCAidConfiguration.getServerBaseUrl + xSCAidConfiguration.getPaperPath
+
+    val request = new HttpEntity[Void](null, requestHeaders)
+
+    restTemplate.exchange(url, HttpMethod.GET, request,
+      new ParameterizedTypeReference[JMap[String, TestPaper]] {}, userId).getBody
   }
 }

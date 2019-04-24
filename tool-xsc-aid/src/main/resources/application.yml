@@ -12,6 +12,7 @@ xsc:
     tickets-by-uid-path: /admission-tickets/user/{user-id}
     single-test-path: /tests/{test-id}
     login-path: /login/vcode
+    paper-path: /login/papers/user/{user-id}
     answer-post-path: /answers/test/{test-id}/user/{user-id}
     answersheet-post-path: /answer-sheets/{ticket-id}
 
@@ -35,7 +36,7 @@ xsc:
     answers-count-ratio-gap: 0.1
     submission-delay-deviation: 0.2
 
-    pt-schedule-cron: '0 30 * * * ?'
+    pt-schedule-cron: '0 33 * * * ?'
 
 
 

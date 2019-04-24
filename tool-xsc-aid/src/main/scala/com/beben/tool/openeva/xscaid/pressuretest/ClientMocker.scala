@@ -23,6 +23,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
                    @Autowired answerSheetService: AnswersheetService) {
 
   private var personalExamContext: PersonalExamContext = _
+  private var testPapers: Map[String, TestPaper] = _
 
   // unit=>ms
   var triggerDelay: Int = _
@@ -45,6 +46,8 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
 
     personalExamContext =
       loginService.loginByVCode(foreignId, xSCAidConfiguration.getGodVcode)
+    testPapers = loginService.fetchPapers(personalExamContext.getUserId).asScala.toMap
+    assert(personalExamContext.getTests.size() == testPapers.size)
 
     val tests = personalExamContext.getTests.asScala
 
@@ -60,7 +63,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
       case (testInfo, index) =>
         val curTime = System.currentTimeMillis()
 
-        val answers = testInfo.getTestPaper.getQuestionSets.asScala.flatMap(
+        val answers = testPapers(testInfo.getTestId).getQuestionSets.asScala.flatMap(
           _.getQuestions.asScala).map(question => {
 
           val answer = new Answer

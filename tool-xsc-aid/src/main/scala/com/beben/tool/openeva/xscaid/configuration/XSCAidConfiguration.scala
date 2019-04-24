@@ -33,6 +33,9 @@ class XSCAidConfiguration {
   var loginPath: String = _
 
   @BeanProperty
+  var paperPath: String = _
+
+  @BeanProperty
   var answerPostPath: String = _
 
   @BeanProperty
