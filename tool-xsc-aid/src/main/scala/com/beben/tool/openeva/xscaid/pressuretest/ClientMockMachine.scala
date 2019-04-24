@@ -3,6 +3,7 @@ package com.beben.tool.openeva.xscaid.pressuretest
 import java.util.concurrent.{ExecutorService, Executors}
 
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
+import com.beben.tool.openeva.xscaid.repository.PtMockClientStatRepository
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.{ApplicationContext, ApplicationContextAware}
@@ -11,7 +12,8 @@ import org.springframework.stereotype.Component
 import scala.util.Random
 
 @Component
-class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfiguration)
+class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfiguration,
+                        @Autowired private val ptMockClientStatRepository: PtMockClientStatRepository)
   extends ApplicationContextAware {
 
   private val log = LoggerFactory.getLogger(classOf[ClientMockMachine])
@@ -20,7 +22,8 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
   private var clientMockers: List[ClientMocker] = _
 
-  private var executorService: ExecutorService = _
+  private val executorService: ExecutorService =
+    Executors.newFixedThreadPool(xSCAidConfiguration.getPressureUserCount)
 
   override def setApplicationContext(applicationContext: ApplicationContext): Unit = {
     this.applicationContext = applicationContext
@@ -43,9 +46,6 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
       clientMocker
     }).toList
-
-    executorService = Executors.newFixedThreadPool(
-      xSCAidConfiguration.getPressureUserCount)
   }
 
 
@@ -62,6 +62,8 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
         clientMocker.mock()
 
         val endTime = System.currentTimeMillis
+
+        ptMockClientStatRepository.save(clientMocker.getPtMockClientStat)
 
         log.info("Foreign-ID: {}, Time-Elapsed: {}", clientMocker.foreignId, endTime - startTime)
       })

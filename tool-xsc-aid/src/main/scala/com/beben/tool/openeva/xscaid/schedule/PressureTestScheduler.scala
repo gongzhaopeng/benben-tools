@@ -11,6 +11,7 @@ class PressureTestScheduler(@Autowired private val clientMockMachine: ClientMock
   @Scheduled(cron = """${xsc.aid.pt-schedule-cron}""")
   def launchClientMockMachine(): Unit = {
 
+    clientMockMachine.init()
     clientMockMachine.launch()
   }
 }

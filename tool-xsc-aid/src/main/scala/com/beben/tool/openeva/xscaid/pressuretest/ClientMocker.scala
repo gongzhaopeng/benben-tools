@@ -1,6 +1,9 @@
 package com.beben.tool.openeva.xscaid.pressuretest
 
+import java.text.SimpleDateFormat
+import java.util.Date
 import java.util.concurrent.TimeUnit
+import java.util.{List => JList, ArrayList => JArrayList}
 
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
 import com.beben.tool.openeva.xscaid.model._
@@ -35,6 +38,10 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
   private var testAnswersArray: Array[List[Answer]] = _
   private var testAnswerSheetArray: Array[AnswerSheet] = _
   private var testAnswerSubmitDelayArray: Array[List[Long]] = _
+
+  private var ptMockClientStat: PtMockClientStat = _
+
+  def getPtMockClientStat: PtMockClientStat = ptMockClientStat
 
   def init(triggerDelay: Int, foreignId: String): Unit = {
 
@@ -148,6 +155,18 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
       case (testAnswers, index) =>
         assert(testAnswers.length + 1 == testAnswerSubmitDelayArray(index).length)
     }
+
+    ptMockClientStat = new PtMockClientStat
+    ptMockClientStat.setForeignId(foreignId)
+    ptMockClientStat.setVersion(
+      new SimpleDateFormat("yyyy-MM-dd HH").format(new Date))
+    ptMockClientStat.setAsSubmitStats(new JArrayList[SubmitStat]())
+    ptMockClientStat.setAnswerSubmitStats(
+      tests.map(_.testId -> {
+        val listForTest: JList[SubmitStat] = new JArrayList[SubmitStat]()
+        listForTest
+      }).toMap.asJava
+    )
   }
 
   def mock(): Unit = {
@@ -168,17 +187,31 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
               answerService.submitAnswer(testInfo.getTestId,
                 personalExamContext.getUserId, answer)
             val answerEndTime = System.currentTimeMillis()
+            val answerRespSpan = answerEndTime - answerBeginTime
+
+            val answerSubmitStat = new SubmitStat
+            answerSubmitStat.setId(answer.getRefQuestion)
+            answerSubmitStat.setTriggerTimestamp(answerBeginTime)
+            answerSubmitStat.setRespSpan(answerRespSpan.toInt)
+            ptMockClientStat.getAnswerSubmitStats.get(testInfo.testId)
+              .add(answerSubmitStat)
 
             assert(answerSubmissionResponse.getStatusCode == HttpStatus.OK)
 
-            TimeUnit.MILLISECONDS.sleep(delayList(answerIndex) -
-              (answerEndTime - answerBeginTime))
+            TimeUnit.MILLISECONDS.sleep(delayList(answerIndex) - answerRespSpan)
         }
 
         val asBeginTime = System.currentTimeMillis()
         val answerSheetSubmissionResponse =
           answerSheetService.submitAnswersheet(testInfo.getTicketId, answerSheet)
         val asEndTime = System.currentTimeMillis()
+        val asRespSpan = asEndTime - asBeginTime
+
+        val asSubmitStat = new SubmitStat
+        asSubmitStat.setId(testInfo.testId)
+        asSubmitStat.setTriggerTimestamp(asBeginTime)
+        asSubmitStat.setRespSpan(asRespSpan.toInt)
+        ptMockClientStat.getAsSubmitStats.add(asSubmitStat)
 
         assert(answerSheetSubmissionResponse.getStatusCode == HttpStatus.OK)
 
