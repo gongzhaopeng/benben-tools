@@ -6,21 +6,32 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 import scala.beans.BeanProperty
 
-class AnswerSheet {
+class AnswerSheet(as: JList[Answer], i: String, ol: OpLog, rat: String) {
+
+  def this() = this(null, null, null, null)
 
   @BeanProperty
   @JsonProperty("answers")
-  var answers: JList[Answer] = _
+  var answers: JList[Answer] = as
 
   @BeanProperty
   @JsonProperty("id")
-  var id: String = _
+  var id: String = i
 
   @BeanProperty
   @JsonProperty("oplog")
-  var oplog: OpLog = _
+  var oplog: OpLog = ol
 
   @BeanProperty
   @JsonProperty("ref_AdmissionTicket")
-  var refAAdmissionTicket: String = _
+  var refAAdmissionTicket: String = rat
 }
+
+object AnswerSheet {
+
+  def apply(answers: JList[Answer], id: String, oplog: OpLog,
+            refAAdmissionTicket: String): AnswerSheet =
+    new AnswerSheet(answers, id, oplog, refAAdmissionTicket)
+}
+
+

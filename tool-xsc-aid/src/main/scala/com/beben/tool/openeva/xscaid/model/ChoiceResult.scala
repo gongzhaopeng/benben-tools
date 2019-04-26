@@ -4,13 +4,21 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 import scala.beans.BeanProperty
 
-class ChoiceResult {
+class ChoiceResult(c: String, s: String) {
+
+  def this() = this(null, null)
 
   @BeanProperty
   @JsonProperty("content")
-  var content: String = _
+  var content: String = c
 
   @BeanProperty
   @JsonProperty("style")
-  var style: String = _
+  var style: String = s
+}
+
+object ChoiceResult {
+
+  def apply(content: String, style: String): ChoiceResult =
+    new ChoiceResult(content, style)
 }

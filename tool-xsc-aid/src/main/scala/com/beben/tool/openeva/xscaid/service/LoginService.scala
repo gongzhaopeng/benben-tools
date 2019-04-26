@@ -23,9 +23,7 @@ class LoginService(@Autowired private val restTemplate: RestTemplate,
     val url =
       xSCAidConfiguration.getServerBaseUrl + xSCAidConfiguration.getLoginPath
 
-    val vCodeLoginData = new VCodeLoginData
-    vCodeLoginData.setForeignId(foreignId)
-    vCodeLoginData.setVcode(vCode)
+    val vCodeLoginData = VCodeLoginData(foreignId, vCode)
 
     val request = new HttpEntity[VCodeLoginData](vCodeLoginData, requestHeaders)
 

@@ -73,22 +73,10 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         val answers = testPapers(testInfo.getTestId).getQuestionSets.asScala.flatMap(
           _.getQuestions.asScala).map(question => {
 
-          val answer = new Answer
-
-          answer.setRefQuestion(question.getId)
-
-          val opLog = new OpLog
-          opLog.setStartTime(curTime)
-          opLog.setEndTime(curTime)
-          opLog.setMisc("Mocked misc.")
-          answer.setOplog(opLog)
-
-          val choiceResult = new ChoiceResult
-          choiceResult.setContent("Mocked content.")
-          choiceResult.setStyle("Mocked style.")
-          answer.setResult(choiceResult)
-
-          answer
+          Answer(
+            OpLog(curTime, "Mocked misc.", curTime),
+            question.getId,
+            ChoiceResult("Mocked content.", "Mocked style."))
         })
 
         testAnswersArray(index) =
@@ -97,22 +85,16 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
             .slice(0, (answers.size * actualAnswerSubmissionRepeat).ceil.toInt)
             .toList
 
-        val answerSheet = new AnswerSheet
-        answerSheet.setAnswers(answers.asJava)
-        val opLog = new OpLog
-        opLog.setStartTime(curTime)
-        opLog.setEndTime(curTime)
-        opLog.setMisc("Mocked misc.")
-        answerSheet.setOplog(opLog)
-        answerSheet.setRefAAdmissionTicket(testInfo.getTicketId)
-        testAnswerSheetArray(index) = answerSheet
+        testAnswerSheetArray(index) = AnswerSheet(
+          answers.asJava,
+          null,
+          OpLog(curTime, "Mocked misc.", curTime),
+          testInfo.getTestId)
     }
 
     var testTimeRatioList = Range(0, tests.length - 1).map(_ =>
       1 - (random.nextDouble() * 2 - 1) * xSCAidConfiguration.getTestTimeDeviation)
-      .toList
-    val finalTestTimeRatio =
-      1 * tests.length - testTimeRatioList.sum
+    val finalTestTimeRatio = 1 * tests.length - testTimeRatioList.sum
     testTimeRatioList :+= finalTestTimeRatio
 
     val finalAsSubmissionPreSpan =
@@ -131,7 +113,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
           val delayDeviation = (random.nextDouble() * 2 - 1) *
             xSCAidConfiguration.getSubmissionDelayDeviation
 
-          Array(
+          List(
             (averageSubmitDelay * (1 - delayDeviation)).toLong,
             (averageSubmitDelay * (1 + delayDeviation)).toLong)
         }).toArray
@@ -156,16 +138,13 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         assert(testAnswers.length + 1 == testAnswerSubmitDelayArray(index).length)
     }
 
-    ptMockClientStat = new PtMockClientStat
-    ptMockClientStat.setForeignId(foreignId)
-    ptMockClientStat.setVersion(
+    ptMockClientStat = PtMockClientStat(
+      foreignId,
       new SimpleDateFormat("yyyy-MM-dd HH").format(new Date))
     ptMockClientStat.setAsSubmitStats(new JArrayList[SubmitStat]())
     ptMockClientStat.setAnswerSubmitStats(
-      tests.map(_.testId -> {
-        val listForTest: JList[SubmitStat] = new JArrayList[SubmitStat]()
-        listForTest
-      }).toMap.asJava
+      tests.map(_.testId ->
+        (new JArrayList[SubmitStat](): JList[SubmitStat])).toMap.asJava
     )
   }
 
@@ -189,10 +168,10 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
             val answerEndTime = System.currentTimeMillis()
             val answerRespSpan = answerEndTime - answerBeginTime
 
-            val answerSubmitStat = new SubmitStat
-            answerSubmitStat.setId(answer.getRefQuestion)
-            answerSubmitStat.setTriggerTimestamp(answerBeginTime)
-            answerSubmitStat.setRespSpan(answerRespSpan.toInt)
+            val answerSubmitStat = SubmitStat(
+              answer.getRefQuestion,
+              new Date(answerBeginTime),
+              answerRespSpan.toInt)
             ptMockClientStat.getAnswerSubmitStats.get(testInfo.testId)
               .add(answerSubmitStat)
 
@@ -207,16 +186,15 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         val asEndTime = System.currentTimeMillis()
         val asRespSpan = asEndTime - asBeginTime
 
-        val asSubmitStat = new SubmitStat
-        asSubmitStat.setId(testInfo.testId)
-        asSubmitStat.setTriggerTimestamp(asBeginTime)
-        asSubmitStat.setRespSpan(asRespSpan.toInt)
+        val asSubmitStat = SubmitStat(
+          testInfo.testId,
+          new Date(asBeginTime),
+          asRespSpan.toInt)
         ptMockClientStat.getAsSubmitStats.add(asSubmitStat)
 
         assert(answerSheetSubmissionResponse.getStatusCode == HttpStatus.OK)
 
-        TimeUnit.MILLISECONDS.sleep(delayList.last -
-          (asEndTime - asBeginTime))
+        TimeUnit.MILLISECONDS.sleep(delayList.last - asRespSpan)
     }
   }
 }
