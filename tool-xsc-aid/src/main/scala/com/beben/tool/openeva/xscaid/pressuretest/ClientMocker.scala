@@ -138,9 +138,9 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         assert(testAnswers.length + 1 == testAnswerSubmitDelayArray(index).length)
     }
 
-    ptMockClientStat = PtMockClientStat(
+    ptMockClientStat = PtMockClientStat(PtMockClientStat.CompositeKey(
       foreignId,
-      new SimpleDateFormat("yyyy-MM-dd HH").format(new Date))
+      new SimpleDateFormat("yyyy-MM-dd HH").format(new Date)))
     ptMockClientStat.setAsSubmitStats(new JArrayList[SubmitStat]())
     ptMockClientStat.setAnswerSubmitStats(
       tests.map(_.testId ->
