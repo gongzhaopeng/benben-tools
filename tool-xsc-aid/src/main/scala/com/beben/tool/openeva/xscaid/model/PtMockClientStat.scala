@@ -1,11 +1,10 @@
 package com.beben.tool.openeva.xscaid.model
 
 import java.util.{List => JList, Map => JMap}
-import java.util.Date
 
 import com.beben.tool.openeva.xscaid.model.PtMockClientStat.CompositeKey
-import org.springframework.data.mongodb.core.mapping.Document
 import org.springframework.data.annotation.Id
+import org.springframework.data.mongodb.core.mapping.Document
 
 import scala.beans.BeanProperty
 
@@ -45,13 +44,13 @@ object PtMockClientStat {
 
 }
 
-class SubmitStat(id: String, tt: Date, rs: Int) {
+class SubmitStat(id: String, tt: Long, rs: Int) {
 
   @BeanProperty
   var identity: String = id
 
   @BeanProperty
-  var triggerTime: Date = tt
+  var triggerTime: Long = tt
 
   @BeanProperty
   var respSpan: Int = rs
@@ -59,6 +58,6 @@ class SubmitStat(id: String, tt: Date, rs: Int) {
 
 object SubmitStat {
 
-  def apply(identity: String, triggerTime: Date, respSpan: Int): SubmitStat =
+  def apply(identity: String, triggerTime: Long, respSpan: Int): SubmitStat =
     new SubmitStat(identity, triggerTime, respSpan)
 }

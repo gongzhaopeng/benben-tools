@@ -170,7 +170,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
 
             val answerSubmitStat = SubmitStat(
               answer.getRefQuestion,
-              new Date(answerBeginTime),
+              answerBeginTime,
               answerRespSpan.toInt)
             ptMockClientStat.getAnswerSubmitStats.get(testInfo.testId)
               .add(answerSubmitStat)
@@ -188,7 +188,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
 
         val asSubmitStat = SubmitStat(
           testInfo.testId,
-          new Date(asBeginTime),
+          asBeginTime,
           asRespSpan.toInt)
         ptMockClientStat.getAsSubmitStats.add(asSubmitStat)
 
