@@ -60,9 +60,6 @@ class XSCAidConfiguration {
   var answerSubmissionRepeat: Double = _
 
   @BeanProperty
-  var answerCommitDelay: Long = _
-
-  @BeanProperty
   var godVcode: String = _
 
   @BeanProperty
