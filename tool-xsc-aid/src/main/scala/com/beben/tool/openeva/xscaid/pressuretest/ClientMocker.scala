@@ -3,7 +3,6 @@ package com.beben.tool.openeva.xscaid.pressuretest
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.concurrent.TimeUnit
-import java.util.{List => JList, ArrayList => JArrayList}
 
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
 import com.beben.tool.openeva.xscaid.model._
@@ -14,8 +13,8 @@ import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component
 import org.springframework.web.client.RestTemplate
 
-import scala.util.Random
 import scala.collection.JavaConverters._
+import scala.util.Random
 
 @Component
 @Scope("prototype")
@@ -31,6 +30,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
   // unit=>ms
   var triggerDelay: Int = _
 
+  private var version: String = _
   var foreignId: String = _
 
   private var userLevel: Int = _
@@ -39,9 +39,12 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
   private var testAnswerSheetArray: Array[AnswerSheet] = _
   private var testAnswerSubmitDelayArray: Array[List[Long]] = _
 
-  private var ptMockClientStat: PtMockClientStat = _
+  private var asSubmitStats: List[AnswerSheetSubmitStat] = List()
+  private var answerSubmitStats: List[AnswerSubmitStat] = List()
 
-  def getPtMockClientStat: PtMockClientStat = ptMockClientStat
+  def getAsSubmitStats: List[AnswerSheetSubmitStat] = asSubmitStats
+
+  def getAnswerSubmitStats: List[AnswerSubmitStat] = answerSubmitStats
 
   def init(triggerDelay: Int, foreignId: String): Unit = {
 
@@ -138,14 +141,7 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         assert(testAnswers.length + 1 == testAnswerSubmitDelayArray(index).length)
     }
 
-    ptMockClientStat = PtMockClientStat(PtMockClientStat.CompositeKey(
-      foreignId,
-      new SimpleDateFormat("yyyy-MM-dd HH").format(new Date)))
-    ptMockClientStat.setAsSubmitStats(new JArrayList[SubmitStat]())
-    ptMockClientStat.setAnswerSubmitStats(
-      tests.map(_.testId ->
-        (new JArrayList[SubmitStat](): JList[SubmitStat])).toMap.asJava
-    )
+    version = new SimpleDateFormat("yyyy-MM-dd HH").format(new Date)
   }
 
   def mock(): Unit = {
@@ -168,12 +164,14 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
             val answerEndTime = System.currentTimeMillis()
             val answerRespSpan = answerEndTime - answerBeginTime
 
-            val answerSubmitStat = SubmitStat(
+            val answerSubmitStat = AnswerSubmitStat(
+              version,
+              foreignId,
               answer.getRefQuestion,
               answerBeginTime,
               answerRespSpan.toInt)
-            ptMockClientStat.getAnswerSubmitStats.get(testInfo.testId)
-              .add(answerSubmitStat)
+
+            answerSubmitStats ::= answerSubmitStat
 
             assert(answerSubmissionResponse.getStatusCode == HttpStatus.OK)
 
@@ -186,11 +184,14 @@ class ClientMocker(@Autowired private val xSCAidConfiguration: XSCAidConfigurati
         val asEndTime = System.currentTimeMillis()
         val asRespSpan = asEndTime - asBeginTime
 
-        val asSubmitStat = SubmitStat(
+        val asSubmitStat = AnswerSheetSubmitStat(
+          version,
+          foreignId,
           testInfo.testId,
           asBeginTime,
           asRespSpan.toInt)
-        ptMockClientStat.getAsSubmitStats.add(asSubmitStat)
+
+        asSubmitStats ::= asSubmitStat
 
         assert(answerSheetSubmissionResponse.getStatusCode == HttpStatus.OK)
 

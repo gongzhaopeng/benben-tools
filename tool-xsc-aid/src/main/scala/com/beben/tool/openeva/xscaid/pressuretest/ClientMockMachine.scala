@@ -3,7 +3,7 @@ package com.beben.tool.openeva.xscaid.pressuretest
 import java.util.concurrent.{ExecutorService, Executors}
 
 import com.beben.tool.openeva.xscaid.configuration.XSCAidConfiguration
-import com.beben.tool.openeva.xscaid.repository.PtMockClientStatRepository
+import com.beben.tool.openeva.xscaid.repository.{AnswerSheetSubmitStatRepository, AnswerSubmitStatRepository}
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.{ApplicationContext, ApplicationContextAware}
@@ -13,7 +13,8 @@ import scala.util.Random
 
 @Component
 class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfiguration,
-                        @Autowired private val ptMockClientStatRepository: PtMockClientStatRepository)
+                        @Autowired private val answerSubmitStatRepository: AnswerSubmitStatRepository,
+                        @Autowired private val answerSheetSubmitStatRepository: AnswerSheetSubmitStatRepository)
   extends ApplicationContextAware {
 
   private val log = LoggerFactory.getLogger(classOf[ClientMockMachine])
@@ -63,7 +64,8 @@ class ClientMockMachine(@Autowired private val xSCAidConfiguration: XSCAidConfig
 
         val endTime = System.currentTimeMillis
 
-        ptMockClientStatRepository.save(clientMocker.getPtMockClientStat)
+        clientMocker.getAnswerSubmitStats.foreach(stat => answerSubmitStatRepository.insert(stat))
+        clientMocker.getAsSubmitStats.foreach(stat => answerSheetSubmitStatRepository.insert(stat))
 
         log.info("Foreign-ID: {}, Time-Elapsed: {}", clientMocker.foreignId, endTime - startTime)
       })
