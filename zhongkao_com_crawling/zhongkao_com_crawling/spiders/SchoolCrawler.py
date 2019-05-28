@@ -9,7 +9,7 @@ class SchoolCrawler(scrapy.Spider):
             return f'http://school.zhongkao.com/province/{province}/'
 
         _PROVINCE_DOMAIN = [
-            # 1908,  # 河北
+            1908,  # 河北
             1199,  # 重庆
             3822,  # 西藏
         ]
