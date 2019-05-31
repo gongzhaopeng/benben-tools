@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f62dd3fc-a952-4520-bf1b-1f67c5222067" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gaokao_koolearn_com_crawling.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/spiders/school_crawler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/spiders/spec_cutoff_crawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zhongkao_com_crawling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongkao_com_crawling/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+            <state relative-caret-position="676">
+              <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -59,6 +56,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -81,7 +79,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,18 +141,19 @@
       <option name="presentableId" value="Default" />
       <updated>1559205850409</updated>
       <workItem from="1559205852153" duration="11859000" />
-      <workItem from="1559272952303" duration="31000" />
+      <workItem from="1559272952303" duration="111000" />
+      <workItem from="1559273065918" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11890000" />
+    <option name="totallyTimeSpent" value="12046000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-137" y="23" width="1243" height="978" extended-state="0" />
+    <frame x="6" y="23" width="1243" height="978" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25395504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -211,8 +209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+        <state relative-caret-position="676">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
         </state>
       </provider>
     </entry>

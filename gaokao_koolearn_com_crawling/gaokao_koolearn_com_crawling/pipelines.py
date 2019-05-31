@@ -52,7 +52,7 @@ class MongoPipeline(object):
         item_to_save = dict(item).copy()
         item_id = item_to_save['_id']
         del item_to_save['_id']
-        self.db[coll].update_one(
+        coll.update_one(
             {'_id': item_id},
             {"$set": item_to_save},
             upsert=True)
