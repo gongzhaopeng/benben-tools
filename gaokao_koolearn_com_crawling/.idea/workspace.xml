@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f62dd3fc-a952-4520-bf1b-1f67c5222067" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/spiders/spec_cutoff_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaokao_koolearn_com_crawling/spiders/spec_cutoff_crawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zhongkao_com_crawling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zhongkao_com_crawling/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -18,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
+            <state relative-caret-position="795">
               <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
             </state>
           </provider>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/spiders/spec_cutoff_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="662">
-              <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+            <state relative-caret-position="1575">
+              <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -59,10 +58,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="24" />
+    <option name="y" value="23" />
     <option name="width" value="1243" />
-    <option name="height" value="978" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -70,6 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,7 +91,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -159,17 +157,19 @@
       <workItem from="1559273065918" duration="130000" />
       <workItem from="1559273197781" duration="257000" />
       <workItem from="1559286497426" duration="8015000" />
+      <workItem from="1559297353913" duration="639000" />
+      <workItem from="1559298042269" duration="637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20372000" />
+    <option name="totallyTimeSpent" value="21648000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="44" y="24" width="1243" height="978" extended-state="0" />
+    <frame x="0" y="23" width="1243" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26228142" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27060783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -206,13 +206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="734">
@@ -220,10 +213,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gaokao_koolearn_com_crawling/spiders/spec_cutoff_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+        <state relative-caret-position="1575">
+          <caret line="105" column="18" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
