@@ -9,7 +9,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 import java.util.concurrent.TimeUnit;
 
-@BenchmarkMode(Mode.Throughput)
+@BenchmarkMode(Mode.All)
 @State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.SECONDS)
 public class AnswersUpdateBenchmark {
