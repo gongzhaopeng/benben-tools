@@ -1,8 +1,8 @@
 pt:
   spec-recommend-path: 'http://192.168.0.125:8090/schoolMajorRank/queryByRank'
   spec-query-path: 'http://192.168.0.125:8090/schoolMajorRank/queryFilter'
-  profile-update-path: 'http://localhost:8086/thumbelina/users/{id}/profile/custom'
-  answers-update-path: 'http://localhost:8086/thumbelina/assessments/{assessment-id}/modules/{module-id}/answers'
+  profile-update-path: 'https://cloud.benbenedu.cn/thumbelina/users/{id}/profile/custom'
+  answers-update-path: 'https://cloud.benbenedu.cn/thumbelina/assessments/{assessment-id}/modules/{module-id}/answers'
 
   user-id: "_PT_TEST"
-  assessment-id: "5cf637e81d49b6204ae3eccd"
+  assessment-id: "5cf86f78b4f47074417e1e44"
