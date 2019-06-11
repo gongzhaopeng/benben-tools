@@ -7,7 +7,7 @@ xsc:
   aid:
     server-base-url: http://localhost:8086/openeva
     x-auth-code: GOD_BLESS_ME
-    test-ids: f77b2811-20ac-4701-b35e-3a9074d34080, fad153df-a125-452d-a726-ee18d5142279, 21dc7f9d-80a7-41da-8759-d49f936501ff, 62ab7ec7-3edf-481a-aec3-352fbe145681, 6cf31943-4d59-4fde-9781-ad0aa0b72ec6, 7d6d3cac-1235-4d2b-98cd-a508d5ad7d08
+    test-ids: 82109c34-690d-4e57-ae39-3f8306505fbb, bc16450c-6a3f-42c3-9faa-620199f7f43f, 19190f23-6f94-497c-aab8-3a22bdbc8f58, 77ef321a-c536-4146-b7ea-fedaa4136a61
     #    server-base-url: https://api.xueliceping.com/openeva
     #    x-auth-code: b3d0369a-06b3-4cd8-8000-786765e63e46
     #    test-ids: 1d42585b-7da4-4385-add3-d90511ac7852, fb803090-34a1-49e8-9bae-5754f64ccfbe, 86e96a7b-05c2-448f-a398-04c4960371d8

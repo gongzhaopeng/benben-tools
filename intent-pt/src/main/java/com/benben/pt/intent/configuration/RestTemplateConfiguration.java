@@ -18,7 +18,12 @@ public class RestTemplateConfiguration {
 
     @Bean
     @Primary
-    public RestTemplate restTemplate(
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
+
+    @Bean
+    public RestTemplate trustSelfRestTemplate(
             RestTemplateBuilder builder) throws Exception {
 
         final var sslContext = SSLContextBuilder.create()
