@@ -71,15 +71,15 @@ for fhys_paper in fhys_papers:
 
             formal_papers.append(formal_paper)
 
-for formal_paper in formal_papers[:1]:
-    paper_upload_url = 'https://api.xueliceping.com/openeva/testpapers'
-    paper_upload_req = requests.post(paper_upload_url, data=json.dumps(formal_paper), headers={
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'X-Auth-Code': _X_AUTH_CODE
-    })
-
-    with open(f'testpaper/formal/{formal_paper["description"]}.json', 'w') as outfile:
-        json.dump(paper_upload_req.json(), outfile, ensure_ascii=False, indent=4)
+# for formal_paper in formal_papers:
+#     paper_upload_url = 'https://api.xueliceping.com/openeva/testpapers'
+#     paper_upload_req = requests.post(paper_upload_url, data=json.dumps(formal_paper), headers={
+#         'Content-Type': 'application/json',
+#         'Accept': 'application/json',
+#         'X-Auth-Code': _X_AUTH_CODE
+#     })
+#
+#     with open(f'testpaper/formal/{formal_paper["description"]}.json', 'w') as outfile:
+#         json.dump(paper_upload_req.json(), outfile, ensure_ascii=False, indent=4)
 
 logging.info("Finish...")
