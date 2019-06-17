@@ -16,11 +16,11 @@ import java.nio.charset.Charset;
 @Configuration
 public class RestTemplateConfiguration {
 
-    @Bean
-    @Primary
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
+//    @Bean
+//    @Primary
+//    public RestTemplate restTemplate() {
+//        return new RestTemplate();
+//    }
 
     @Bean
     public RestTemplate trustSelfRestTemplate(
