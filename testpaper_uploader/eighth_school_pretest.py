@@ -64,7 +64,7 @@ clone_paper_ids = [
 
 assert len(clone_paper_ids) == _CLONE_COUNT
 
-for i, pid in enumerate(clone_paper_ids[:1]):
+for i, pid in enumerate(clone_paper_ids):
     description = f'八中体验试卷0618({i + 1})'
     cloned_paper = dict(origin_paper)
     cloned_paper['id'] = pid
