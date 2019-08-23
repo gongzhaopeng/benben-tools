@@ -10,12 +10,12 @@ import org.springframework.web.client.RestTemplate;
 
 @Service
 @Slf4j
-public class StudentInfoService {
+public class AssessmentService {
 
     private final RestTemplate restTemplate;
     private final RequestUrlConfiguration requestUrlConfiguration;
 
-    public StudentInfoService(
+    public AssessmentService(
             final RestTemplate restTemplate,
             final RequestUrlConfiguration requestUrlConfiguration) {
 
@@ -23,14 +23,14 @@ public class StudentInfoService {
         this.requestUrlConfiguration = requestUrlConfiguration;
     }
 
-    public String fetchStudentInfo(
+    public String fetchAssessment(
             final MultiValueMap<String, String> cookie) {
 
         final var reqEntity = new HttpEntity<>(
                 null, cookie);
 
         final var respEntity = restTemplate.exchange(
-                requestUrlConfiguration.getStudentInfo(),
+                requestUrlConfiguration.getAssessment(),
                 HttpMethod.GET,
                 reqEntity,
                 String.class);

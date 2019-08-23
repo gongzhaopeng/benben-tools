@@ -12,4 +12,5 @@ public class RequestUrlConfiguration {
     private String login;
     private String studentInfo;
     private String tests;
+    private String assessment;
 }

@@ -1,7 +1,7 @@
 package cn.benbenedu.test.pressure.fenke;
 
-import cn.benbenedu.test.pressure.fenke.model.Account;
 import cn.benbenedu.test.pressure.fenke.service.AccountService;
+import cn.benbenedu.test.pressure.fenke.service.AssessmentService;
 import cn.benbenedu.test.pressure.fenke.service.LoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.openjdk.jmh.annotations.*;
@@ -9,6 +9,7 @@ import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.util.MultiValueMap;
 
 import java.util.List;
 import java.util.Random;
@@ -18,15 +19,15 @@ import java.util.concurrent.TimeUnit;
 @State(Scope.Benchmark)
 @OutputTimeUnit(TimeUnit.SECONDS)
 @Slf4j
-public class LoginBenchmark {
+public class AssessmentFetchingBenchmark {
 
     private static final int ACCOUNT_NUMBER = 100;
 
     private ConfigurableApplicationContext applicationContext;
 
-    private LoginService loginService;
+    private AssessmentService assessmentService;
 
-    private List<Account> accounts;
+    private List<MultiValueMap<String, String>> cookies;
 
     public static void main(String[] args) throws Exception {
 
@@ -46,12 +47,15 @@ public class LoginBenchmark {
                     FenkePtestApplication.class);
         }
 
+        final var loginService = applicationContext
+                .getBean(LoginService.class);
         final var accountService = applicationContext
                 .getBean(AccountService.class);
-        loginService = applicationContext
-                .getBean(LoginService.class);
+        assessmentService = applicationContext
+                .getBean(AssessmentService.class);
 
-        accounts = accountService.acquireAccounts(ACCOUNT_NUMBER);
+        cookies = loginService.batchLogin(
+                accountService.acquireAccounts(ACCOUNT_NUMBER));
     }
 
     @TearDown
@@ -68,9 +72,9 @@ public class LoginBenchmark {
     @Threads(100)
     public void test() {
 
-        final var account = accounts.get(
-                new Random().nextInt(accounts.size()));
+        final var cookie = cookies.get(
+                new Random().nextInt(cookies.size()));
 
-        loginService.login(account);
+        assessmentService.fetchAssessment(cookie);
     }
 }

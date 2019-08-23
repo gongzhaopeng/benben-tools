@@ -2,3 +2,4 @@ request-url:
   login: 'http://www.xueliceping.com/api/v1/auth/login'
   student-info: 'http://www.xueliceping.com/fenke/studentinfo'
   tests: 'http://www.xueliceping.com/fenke/tests'
+  assessment: ' http://www.xueliceping.com/fenke/tests/5d5a456acec7036c370058fc/assessment'
