@@ -3,3 +3,4 @@ request-url:
   student-info: 'http://www.xueliceping.com/fenke/studentinfo'
   tests: 'http://www.xueliceping.com/fenke/tests'
   assessment: ' http://www.xueliceping.com/fenke/tests/5d5a456acec7036c370058fc/assessment'
+  results: 'http://www.xueliceping.com/api/v1/results/5d5a456acec7036c370058fc'
