@@ -1,0 +1,2 @@
+request-url:
+  inquire-pdf: 'http://www.xueliceping.com/pdfgen/api/readingPdf/{openid}?dataUrl=/fenke/getUURepoet/{openid}&force=0'
