@@ -60,9 +60,9 @@ public class PdfInquiringBenchmark {
 
     @Benchmark
     @Warmup(iterations = 0)
-    @Measurement(iterations = 4)
+    @Measurement(iterations = 5)
     @Fork(0)
-    @Threads(10)
+    @Threads(8)
     public void test() throws Exception {
 
         final var openidPos = curOpenidPos.getAndIncrement();
@@ -75,6 +75,9 @@ public class PdfInquiringBenchmark {
                     openidConfiguration.getOpenids().size());
 
             return;
+        } else {
+
+            log.info("=====================Current openid position: {}", openidPos);
         }
 
         final var openid =
